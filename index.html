@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Collins</title>
-    <meta name="description" content="Brandon Collins — Computer Science & Physics student at Auburn University, AI researcher, ACM President.">
+    <meta name="description" content="Brandon Collins — Computer Science & Physics student at Auburn University, AI researcher (SketchVLM, PSR dataset), ACM Vice President.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -35,9 +35,9 @@
                     <p class="hero-sub">CS &amp; Physics &mdash; Auburn University</p>
                     <p class="hero-bio">
                         Undergraduate researcher focused on Computer Vision and Human-AI Interaction.
-                        Co-first author on the PSR dataset (CVPR 2025 Workshop &amp; WACV 2026).
-                        President of Auburn's ACM chapter. Incoming Quantitative Strategist
-                        at Goldman Sachs.
+                        First author on <strong>SketchVLM</strong> (EMNLP 2026 Main) and co-first author
+                        on the <strong>PSR dataset</strong> (CVPR 2025 Workshop &amp; WACV 2026). Vice President
+                        of Auburn's ACM chapter. Former Quantitative Strategist intern at Goldman Sachs.
                     </p>
                     <div class="hero-links">
                         <a href="mailto:blc0063@auburn.edu">Email</a>
@@ -61,8 +61,38 @@
 
             <div class="paper-row">
                 <div class="paper-thumb">
+                    <a href="https://sketchvlm.github.io/" target="_blank">
+                        <img src="./images/sketchvlm.gif" alt="SketchVLM demo preview">
+                    </a>
+                </div>
+                <div class="paper-info">
+                    <div class="paper-venue">EMNLP 2026 Main</div>
+                    <h3 class="paper-title">SketchVLM</h3>
+                    <p class="paper-authors">
+                        <strong>Brandon Collins</strong>*, Logan Bolton*, Hung Huy Nguyen*,
+                        Mohammad Reza Taesiri, Trung Bui, Anh Totti Nguyen
+                        <span class="paper-authors-note">&nbsp;&middot; *Equal contribution</span>
+                    </p>
+                    <div class="paper-badges">
+                        <span class="badge badge-role">First Author</span>
+                    </div>
+                    <p class="paper-desc">
+                        Created a training-free, model-agnostic framework that enables VLMs to draw
+                        directly on an image to visually explain their answers.
+                    </p>
+                    <div class="paper-links">
+                        <a href="https://sketchvlm.github.io/" target="_blank">Webpage ↗</a>
+                        <a href="https://arxiv.org/abs/2604.22875" target="_blank">PDF ↗</a>
+                        <a href="https://github.com/Brandon-Collins7/sketchvlm" target="_blank">Code ↗</a>
+                        <a href="https://sketch-vlm-demo.vercel.app/" target="_blank">Demo ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper-row">
+                <div class="paper-thumb">
                     <a href="https://psrdataset.github.io/" target="_blank">
-                        <img src="https://loganbolton.github.io/assets/images/imageedit.png" alt="Paper preview">
+                        <img src="./images/understanding_ai_cover_transparent.png" alt="Paper preview">
                     </a>
                 </div>
                 <div class="paper-info">
@@ -70,6 +100,14 @@
                     <h3 class="paper-title">
                         Understanding Generative AI Capabilities<br>in Everyday Image Editing Tasks
                     </h3>
+                    <p class="paper-authors">
+                        Mohammad Reza Taesiri*, <strong>Brandon Collins</strong>*, Logan Bolton*,
+                        Viet Dac Lai, Franck Dernoncourt, Trung Bui, Anh Totti Nguyen
+                        <span class="paper-authors-note">&nbsp;&middot; *Equal contribution</span>
+                    </p>
+                    <div class="paper-badges">
+                        <span class="badge badge-role">Co-First Author</span>
+                    </div>
                     <p class="paper-desc">
                         We propose the PSR dataset — 305,000 real image-edit requests web-scraped
                         from Reddit — and evaluate state-of-the-art multimodal models including
@@ -97,11 +135,14 @@
                     <div class="exp-date">Jun – Aug 2026</div>
                     <div class="exp-content">
                         <div class="exp-header">
-                            <span class="exp-role">Quantitative Strategist</span>
+                            <span class="exp-role">Quantitative Strategist &mdash; FICC &amp; Equities</span>
                             <span class="exp-company">Goldman Sachs &middot; New York City, NY</span>
                         </div>
                         <ul>
-                            <li>FICC &amp; Equities – Global Banking &amp; Markets</li>
+                            <li>Designed and backtested adverse-selection signals, reducing negative
+                                markouts for electronic market-making in interest-rate products.</li>
+                            <li>Analyzed dependencies across client analytics jobs to identify
+                                critical-path bottlenecks causing processing delays and SLA breaches.</li>
                         </ul>
                     </div>
                 </div>
@@ -110,15 +151,25 @@
                     <div class="exp-date">Feb 2025 – Present</div>
                     <div class="exp-content">
                         <div class="exp-header">
-                            <span class="exp-role">Undergraduate Research Assistant &mdash; ML</span>
+                            <span class="exp-role">Undergraduate Research Assistant &mdash; Computer Vision</span>
                             <span class="exp-company">Auburn University &middot; Auburn, AL</span>
                         </div>
                         <ul>
-                            <li><strong>Co-first author</strong> on the PSR dataset with 305,000 real image-edit requests
-                                scraped from Reddit; evaluated SOTA multimodal models.</li>
-                            <li>Built an automated Python/Playwright pipeline streaming 1,000 image-edit
-                                prompts through ChatGPT's web UI, capturing outputs despite missing
-                                GPT-4o API support for image generation at the time.</li>
+                            <li><strong>First author</strong> of <strong><em>SketchVLM</em></strong> (accepted at
+                                <strong>EMNLP 2026 Main</strong>), a training-free framework for generating
+                                editable visual explanations with VLMs, improving accuracy by up to +28.5
+                                points and annotation quality by up to +48.3% over image-editing and
+                                fine-tuned models.</li>
+                            <li>Led manuscript writing, implemented Python inference and evaluation,
+                                created benchmarks, and built the user demo.</li>
+                            <li><strong>Co-first author</strong> of <strong><em>Understanding Generative AI
+                                Capabilities in Everyday Image Editing Tasks</em></strong> (accepted to
+                                <strong>CVPR 2025 Workshops</strong> and <strong>WACV 2026</strong>);
+                                introduced PSR, a dataset of 305K edits derived from real user image-edit
+                                requests, finding SOTA multimodal models complete 33% of requests.</li>
+                            <li>Built an automated Python and Playwright pipeline to submit 1,000
+                                image-editing requests through ChatGPT and capture generated outputs
+                                before image-editing API access was available.</li>
                             <li><strong>Computing Research Association Undergraduate Research Award</strong> — Honorable Mention</li>
                         </ul>
                     </div>
@@ -169,43 +220,46 @@
             <div class="exp-list">
 
                 <div class="exp-row">
-                    <div class="exp-date">Jan 2025 – Present</div>
+                    <div class="exp-date">Aug 2023 – Present</div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <span class="exp-role">Vice President <span class="exp-role-prior">(previously President, Apr 2024 – Jul 2026)</span></span>
+                            <span class="exp-company">Auburn Association for Computing Machinery (ACM) &middot; Auburn University</span>
+                        </div>
+                        <ul>
+                            <li>Manage funds, social events, and company tech talks. Oversee four CSSE clubs
+                                serving 300+ students: Competitive Programming, Technical Interview,
+                                Web Development, and Ethical Hacking.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-row">
+                    <div class="exp-date">Aug 2026 – Present</div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <span class="exp-role">Coach</span>
+                            <span class="exp-company">Auburn Competitive Programming Team &middot; Auburn University</span>
+                        </div>
+                        <ul>
+                            <li>Coach 30 students in advanced algorithms, data structures, and contest
+                                strategy for ICPC.</li>
+                            <li><strong>1st place — ICPC 2025</strong> University of West Florida Regional D1</li>
+                            <li><strong>1st place — ICPC 2023</strong> University of West Florida Regional D2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-row">
+                    <div class="exp-date">Jan 2025 – May 2026</div>
                     <div class="exp-content">
                         <div class="exp-header">
                             <span class="exp-role">Vice President</span>
                             <span class="exp-company">Technical Interview Club &middot; Auburn University</span>
                         </div>
                         <ul>
-                            <li>Mentor 50+ members on algorithms and the interview process.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="exp-row">
-                    <div class="exp-date">Apr 2024 – Present</div>
-                    <div class="exp-content">
-                        <div class="exp-header">
-                            <span class="exp-role">President</span>
-                            <span class="exp-company">Auburn Association for Computing Machinery (ACM) &middot; Auburn University</span>
-                        </div>
-                        <ul>
-                            <li>Manage funds, social events, and company tech talks. Oversee four CSSE clubs
-                                amassing 300+ students: Competitive Programming, Technical Interview,
-                                Web Dev, and Ethical Hacking.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="exp-row">
-                    <div class="exp-date">Aug 2023 – Present</div>
-                    <div class="exp-content">
-                        <div class="exp-header">
-                            <span class="exp-role">Member</span>
-                            <span class="exp-company">Competitive Programming Team &middot; Auburn University</span>
-                        </div>
-                        <ul>
-                            <li><strong>1st place — ICPC 2025</strong> University of West Florida Regional D1</li>
-                            <li><strong>1st place — ICPC 2023</strong> University of West Florida Regional D2</li>
+                            <li>Mentored 50+ members on algorithms, technical interviewing, and the
+                                recruiting process.</li>
                         </ul>
                     </div>
                 </div>

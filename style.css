@@ -179,9 +179,15 @@ section { margin-bottom: 6rem; }
 /* ── Paper ───────────────────────────────────────── */
 .paper-row {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 300px 1fr;
     gap: 3rem;
     align-items: start;
+}
+
+.paper-row + .paper-row {
+    margin-top: 3.5rem;
+    padding-top: 3.5rem;
+    border-top: 1px solid var(--border);
 }
 
 .paper-thumb a {
@@ -213,7 +219,47 @@ section { margin-bottom: 6rem; }
     font-weight: 600;
     line-height: 1.35;
     letter-spacing: -0.01em;
+    margin-bottom: 0.9rem;
+}
+
+.paper-authors {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.6;
     margin-bottom: 1rem;
+}
+
+.paper-authors strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.paper-authors-note {
+    font-size: 0.78rem;
+    opacity: 0.75;
+}
+
+.paper-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.1rem;
+}
+
+.badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+}
+
+.badge-role {
+    color: var(--accent);
+    border-color: var(--accent);
 }
 
 .paper-desc {
@@ -226,22 +272,25 @@ section { margin-bottom: 6rem; }
 
 .paper-links {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
 }
 
 .paper-links a {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.03em;
     color: var(--text);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 1px;
-    transition: border-color 0.15s, color 0.15s;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid #4A4845;
+    border-radius: 2px;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
 
 .paper-links a:hover {
-    color: var(--accent);
-    border-color: var(--accent);
+    background: var(--text);
+    border-color: var(--text);
+    color: var(--bg);
 }
 
 /* ── Experience ──────────────────────────────────── */
@@ -283,6 +332,29 @@ section { margin-bottom: 6rem; }
     font-size: 0.82rem;
     font-weight: 400;
     color: var(--muted);
+}
+
+.exp-role-prior {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--muted);
+    letter-spacing: 0;
+}
+
+/* Leadership: club name leads (bold), role follows (muted) */
+#leadership .exp-role {
+    order: 2;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--muted);
+}
+
+#leadership .exp-company {
+    order: 1;
+    font-size: 0.97rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text);
 }
 
 .exp-content ul {
@@ -386,7 +458,7 @@ footer {
     }
 
     .paper-thumb {
-        max-width: 200px;
+        max-width: 320px;
     }
 
     .exp-row {
