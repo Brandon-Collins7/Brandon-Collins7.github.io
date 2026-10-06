@@ -351,6 +351,11 @@ section { margin-bottom: 6rem; }
     color: var(--muted);
 }
 
+#leadership .exp-role strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
 #leadership .exp-company {
     order: 1;
     font-size: 0.97rem;
