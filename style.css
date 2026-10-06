@@ -230,6 +230,8 @@ section { margin-bottom: 6rem; }
     margin-bottom: 1rem;
 }
 
+.hero-bio strong,
+.paper-desc strong,
 .paper-authors strong {
     color: var(--text);
     font-weight: 600;
