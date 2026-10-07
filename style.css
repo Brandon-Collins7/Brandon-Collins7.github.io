@@ -336,6 +336,8 @@ section { margin-bottom: 6rem; }
     color: var(--muted);
 }
 
+.exp-content .paper-links { margin-top: 1.1rem; }
+
 .exp-role-prior {
     font-size: 0.78rem;
     font-weight: 400;

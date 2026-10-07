@@ -21,6 +21,7 @@
                 <a href="#about">About</a>
                 <a href="#research">Research</a>
                 <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
                 <a href="#leadership">Leadership</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -144,6 +145,8 @@
                                 markouts for electronic market-making in interest-rate products.</li>
                             <li>Analyzed dependencies across client analytics jobs to identify
                                 critical-path bottlenecks causing processing delays and SLA breaches.</li>
+                            <li>Presented markout analysis and bottleneck dashboard to traders, desk
+                                strats, and engineers.</li>
                         </ul>
                     </div>
                 </div>
@@ -194,7 +197,7 @@
                     <div class="exp-date">Jun – Aug 2024</div>
                     <div class="exp-content">
                         <div class="exp-header">
-                            <span class="exp-role">Technology Intern</span>
+                            <span class="exp-role">Software Engineer Intern</span>
                             <span class="exp-company">LPL Financial &middot; Fort Mill, SC</span>
                         </div>
                         <ul>
@@ -204,6 +207,41 @@
                                 protecting 20K+ financial advisors.</li>
                             <li>Led stakeholder meetings to accelerate remediation of critical risks.</li>
                         </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="section-label">
+                <span class="label-slash">/</span>
+                <span class="label-text">Projects</span>
+                <div class="label-line"></div>
+            </div>
+
+            <div class="exp-list">
+
+                <div class="exp-row">
+                    <div class="exp-date">Sep 2026 – Present</div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <span class="exp-role">Nasdaq ITCH Order Book Engine &amp; Market-Making Backtester</span>
+                            <span class="exp-company">C++, Python</span>
+                        </div>
+                        <ul>
+                            <li>Built a C++20 engine reconstructing Nasdaq TotalView-ITCH order books for all
+                                <strong>8,700+</strong> securities (<strong>368M</strong> msgs/day) at
+                                <strong>13.9M msg/s</strong> (p50 <strong>62 ns</strong>), <strong>4.3&times;</strong>
+                                faster than an STL baseline, verified by checksum against an independent
+                                Python implementation.</li>
+                            <li>Built a queue-aware market-making backtester and found that thin-side fills
+                                are <strong>1.1 bps</strong> more adverse only in large-tick stocks.</li>
+                        </ul>
+                        <div class="paper-links">
+                            <a href="https://github.com/Brandon-Collins7/order-book" target="_blank">Code ↗</a>
+                        </div>
                     </div>
                 </div>
 
